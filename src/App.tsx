@@ -705,6 +705,15 @@ export default function App() {
         isSpinning={gameState === 'SPINNING'}
       />
 
+      {/* Footer cuối app */}
+      <footer className="relative z-10 w-full py-2.5 sm:py-3 px-4 text-center mt-auto">
+        <div className="w-full max-w-5xl mx-auto border-t border-slate-800/60 pt-2 pb-1">
+          <p className="text-[11px] sm:text-xs text-slate-400 font-normal tracking-wide select-none">
+            Copyright@2026 - by: GV.Hồ Nguyễn Đa Thiện
+          </p>
+        </div>
+      </footer>
+
       {/* Modals */}
       <SettingsModal
         isOpen={isSettingsOpen}

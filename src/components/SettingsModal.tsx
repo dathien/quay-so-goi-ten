@@ -258,10 +258,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+        <div className="mt-5 pt-3.5 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-slate-400 font-normal tracking-wide select-none text-center sm:text-left">
+            Tác giả: GV.Hồ Nguyễn Đa Thiện
+          </p>
           <button
             onClick={onClose}
-            className="px-6 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-md transition-colors cursor-pointer"
+            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-md transition-colors cursor-pointer"
           >
             Hoàn tất
           </button>

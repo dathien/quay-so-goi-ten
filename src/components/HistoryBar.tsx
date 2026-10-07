@@ -18,8 +18,8 @@ export const HistoryBar: React.FC<HistoryBarProps> = ({
   isSpinning = false,
 }) => {
   return (
-    <footer className="w-full max-w-5xl mx-auto px-4 py-2 sm:py-3 mt-auto">
-      <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-800/90 text-xs sm:text-sm backdrop-blur-md">
+    <div className="w-full max-w-5xl mx-auto px-4 py-2 sm:py-2.5 mt-auto">
+      <div className="w-full flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-800/90 text-xs sm:text-sm backdrop-blur-md">
         {/* Left: Progress info */}
         <div className="flex items-center gap-2">
           <span className="text-slate-400 font-semibold uppercase tracking-wider text-xs">
@@ -77,6 +77,6 @@ export const HistoryBar: React.FC<HistoryBarProps> = ({
           )}
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
