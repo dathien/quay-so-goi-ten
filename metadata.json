@@ -1,0 +1,6 @@
+{
+  "name": "Bingo Classroom – Quay Số Thử Thách",
+  "description": "Web game quay số Bingo lớp học hiện đại dành cho giáo viên và học sinh với hiệu ứng cuộn số 2.5D, câu hỏi trắc nghiệm thử thách và chấm điểm trực tiếp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
