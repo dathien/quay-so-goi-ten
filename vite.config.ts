@@ -4,8 +4,11 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
+  // Tự động dùng đường dẫn '/quay-so-goi-ten/' nếu chạy trên GitHub Pages, ngược lại dùng '/' cho Vercel
+  const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
   return {
-    base: '/quay-so-goi-ten/', // Đã thêm đường dẫn chuẩn cho GitHub Pages ở đây
+    base: isGitHubPages ? '/quay-so-goi-ten/' : '/', 
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
